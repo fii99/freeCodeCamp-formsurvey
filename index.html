@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <style></style>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      <em>Thank you for taking the time to help us improve the platform</em>
+    </p>
+    <form
+      action="https://formspree.io/f/mbjwwwqr"
+      method="POST"
+      id="survey-form"
+    >
+      <fieldset>
+        <label id="name-label"
+          >Name<span>*</span>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            autocomplete="off"
+            name="name"
+            autofocus
+            required
+          />
+        </label>
+
+        <label id="email-label"
+          >Email<span>*</span>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            autocomplete="off"
+            name="email"
+            required
+          />
+        </label>
+
+        <label id="number-label"
+          >Age <sup>(Opt)</sup>
+          <input
+            type="number"
+            id="number"
+            min="13"
+            max="120"
+            placeholder="Age"
+            name="age"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="roleSelect-label"
+          >Which option best describes your current role?
+          <select id="dropdown" name="role">
+            <option value="" required>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer Not to Say</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label id="radio-label">
+          Would You Recommend freeCodeCamp to Your Friends?
+          <label class="unset"
+            ><input
+              type="radio"
+              name="recomend"
+              value="definitely"
+              class="inline"
+            />
+            Definitely</label
+          >
+          <label class="unset"
+            ><input type="radio" name="recomend" value="maybe" class="inline" />
+            Maybe</label
+          >
+          <label class="unset"
+            ><input
+              type="radio"
+              name="recomend"
+              value="not sure"
+              class="inline"
+            />
+            Not Sure</label
+          >
+        </label>
+        <label id="langSelect-label"
+          >What is Your Favourite Language?
+          <select id="dropdown" name="lang">
+            <option value="">Select program language</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascipt">Javascript</option>
+            <option value="sass">SASS</option>
+            <option value="tailwind">Tailwind</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label id="checkbox-label"
+          >What Would You Like to Improved?
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-1"
+              value="frontend"
+              class="inline"
+            />
+            Front-end Projects</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-2"
+              value="backend"
+              class="inline"
+            />
+            Back-end Projects</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-3"
+              value="dataVisualization"
+              class="inline"
+            />
+            Data Visualization</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-4"
+              value="fullstack"
+              class="inline"
+            />
+            Fullstack Projects</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-5"
+              value="openSrcCommunity"
+              class="inline"
+            />
+            Open Source Community</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-6"
+              value="gameDevelopment"
+              class="inline"
+            />
+            Game Development</label
+          >
+          <label class="unset"
+            ><input
+              type="checkbox"
+              name="improved-7"
+              value="otherCourses"
+              class="inline"
+            />
+            Other Courses</label
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="textarea-label"
+          >Any Comments and Suggestions?
+          <textarea
+            name="suggestions"
+            placeholder="Your Suggestions Here . . ."
+            rows="6"
+            cols=""
+          ></textarea>
+        </label>
+        <input type="submit" id="submit" />
+      </fieldset>
+    </form>
+    <div>
+      <small
+        >2022 &copy; Survey Form v1.0 made with 🔥 by
+        <a href="https://github.com/fii99" target="_blank">
+          <strong>Muhammad Rafii</strong></a
+        ></small
+      >
+    </div>
+  </body>
+</html>
